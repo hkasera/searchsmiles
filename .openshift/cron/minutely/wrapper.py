@@ -5,6 +5,11 @@ import json
 import re
 import os
 
+from datetime import datetime, time
+now = datetime.now()
+now_time = now.time()
+if now_time != time(00,35):
+    exit()
 
 def extract(link):
 	ngo = {}
