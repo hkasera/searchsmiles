@@ -1,9 +1,10 @@
-#!/bin/bash
+#!/var/lib/openshift/582177010c1e66dfb5000065/python/virtenv/venv/bin/python
 import requests
 from bs4 import BeautifulSoup
 import json
 import re
 import os
+
 
 def extract(link):
 	ngo = {}
