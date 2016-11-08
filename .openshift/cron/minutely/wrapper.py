@@ -34,7 +34,7 @@ def extract(link):
 				ngo['areas'].append(area_li.get_text().strip().replace(u"\u00A0", " ").replace("'",""))	
 		if soup.find("h2") is not None:
 			ngo['name'] = soup.find("h2").get_text().strip().replace(u"\u00A0", " ").replace("'","")
-		print ngo
+		print(ngo)
 		json_file.write(json.dumps(ngo, sort_keys=True))
 		json_file.write("\n")
 
