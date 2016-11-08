@@ -35,7 +35,7 @@ def extract(link):
 		if soup.find("h2") is not None:
 			ngo['name'] = soup.find("h2").get_text().strip().replace(u"\u00A0", " ").replace("'","")
 		
-		json_file.write(json.dumps(ngo, sort_keys=True).decode('unicode-escape').encode('utf8'))
+		json_file.write(json.dumps(ngo, sort_keys=True))
 		json_file.write("\n")
 
 OPENSHIFT_LOG_DIR = os.getenv("OPENSHIFT_LOG_DIR") 
