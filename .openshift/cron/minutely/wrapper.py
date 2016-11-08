@@ -3,6 +3,7 @@ import requests
 from bs4 import BeautifulSoup
 import json
 import re
+import os
 
 def extract(link):
 	ngo = {}
@@ -36,14 +37,18 @@ def extract(link):
 		json_file.write(json.dumps(ngo, sort_keys=True).decode('unicode-escape').encode('utf8'))
 		json_file.write("\n")
 
-links_file = "undoc.txt"
+OPENSHIFT_LOG_DIR = os.getenv("OPENSHIFT_LOG_DIR") 
+OPENSHIFT_REPO_DIR = os.getenv("OPENSHIFT_REPO_DIR") 
+
+links_file = os.path.join(OPENSHIFT_REPO_DIR, "links/undoc.txt")
 op = open(links_file,'r');
-json_file_name = "undoc_dump.jsonl"
+json_file_name = os.path.join(OPENSHIFT_REPO_DIR, "data/undoc_dump.jsonl")
 json_file = open(json_file_name,'a')
-error = open("undoc_errors.txt",'a')
+error = open(os.path.join(OPENSHIFT_LOG_DIR, "undoc_errors.txt"),'a')
 links = op.readlines()
 for link in links:
 	try :
+		print(link)
 		extract(link.strip())
 	except Exception as e:
 		error.write(link)
