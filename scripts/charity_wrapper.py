@@ -2,6 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 import json
 import re
+import os
 
 OPENSHIFT_LOG_DIR = os.getenv("OPENSHIFT_LOG_DIR") 
 OPENSHIFT_REPO_DIR = os.getenv("OPENSHIFT_REPO_DIR") 
