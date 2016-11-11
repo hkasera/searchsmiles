@@ -25,7 +25,7 @@ def checkForEvents(url):
 OPENSHIFT_LOG_DIR = os.getenv("OPENSHIFT_LOG_DIR") 
 OPENSHIFT_REPO_DIR = os.getenv("OPENSHIFT_REPO_DIR") 
 
-f = os.path.join(OPENSHIFT_REPO_DIR,'data/urls.txt')
+f = open(os.path.join(OPENSHIFT_REPO_DIR,'data/urls.txt'),'r')
 op = open(os.path.join(OPENSHIFT_REPO_DIR,'data/events.json'),'w')
 err = open(os.path.join(OPENSHIFT_LOG_DIR,'err.txt'),'w')
 urls = f.readlines()
