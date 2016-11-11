@@ -1,6 +1,8 @@
 import requests
 import re
 import json
+import os
+
 def checkForEvents(url):
 	r = requests.get(url)
 	link_re = re.compile(r'href="(.*?)"')
@@ -20,10 +22,12 @@ def checkForEvents(url):
 		op.write(",\n")
 
 
+OPENSHIFT_LOG_DIR = os.getenv("OPENSHIFT_LOG_DIR") 
+OPENSHIFT_REPO_DIR = os.getenv("OPENSHIFT_REPO_DIR") 
 
-f = open('data/urls.txt')
-op = open('data/events.json','w')
-err = open('data/err.txt','w')
+f = os.path.join(OPENSHIFT_REPO_DIR,'data/urls.txt')
+op = open(os.path.join(OPENSHIFT_REPO_DIR,'data/events.json'),'w')
+err = open(os.path.join(OPENSHIFT_LOG_DIR,'err.txt'),'w')
 urls = f.readlines()
 for url in urls:
 	if len(url.strip()) != 0:
