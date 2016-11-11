@@ -37,12 +37,13 @@ def extract(link):
 			ngo['tagline'] = soup.findAll("h2", { "class" : "tagline" })[0].get_text().strip().replace(u"\u00A0", " ").replace("'","")
 		
 		json_file.write(json.dumps(ngo, sort_keys=True).decode('unicode-escape').encode('utf8'))
+		json_file.write(",")
 		json_file.write("\n")
 
 
 links_file = os.path.join(OPENSHIFT_REPO_DIR, "links/charity.txt")
 op = open(links_file,'r');
-json_file_name = os.path.join(OPENSHIFT_REPO_DIR, "data/charity_dump.jsonl")
+json_file_name = os.path.join(OPENSHIFT_REPO_DIR, "raw/charity_nav.txt")
 json_file = open(json_file_name,'a')
 error = open(os.path.join(OPENSHIFT_LOG_DIR, "charity_errors.txt"),'a')
 links = op.readlines()

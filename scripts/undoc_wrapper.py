@@ -47,7 +47,7 @@ OPENSHIFT_REPO_DIR = os.getenv("OPENSHIFT_REPO_DIR")
 
 links_file = os.path.join(OPENSHIFT_REPO_DIR, "links/undoc.txt")
 op = open(links_file,'r');
-json_file_name = os.path.join(OPENSHIFT_REPO_DIR, "data/undoc_dump.jsonl")
+json_file_name = os.path.join(OPENSHIFT_REPO_DIR, "raw/undoc_dump.txt")
 json_file = open(json_file_name,'a')
 error = open(os.path.join(OPENSHIFT_LOG_DIR, "undoc_errors.txt"),'a')
 links = op.readlines()
