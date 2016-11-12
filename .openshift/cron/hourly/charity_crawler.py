@@ -12,8 +12,6 @@ def extract(link):
 	ngo = {}
 	ngo['source_link'] = link
 	r = requests.get(link)
-	print(link)
-	print(r.status_code)
 	if r.status_code == 200:
 		soup = BeautifulSoup(r.text, 'html.parser')	
 		if soup.find(id='orgSiteLink') is not None:
@@ -28,10 +26,10 @@ def extract(link):
 		if contact_ele is not None:
 			ngo['address'] = contact_ele[0].next_sibling.next_sibling.get_text().strip().replace(u"\u00A0", " ").replace("'","")
 		board_ele = soup.findAll('h1', text = re.compile('Board Leadership'));
-		if board_ele is not None:
+		if board_ele is not None and len(board_ele) != 0:
 			ngo['board_leader'] = board_ele[0].next_sibling.next_sibling.get_text().strip().replace(u"\u00A0", " ").replace("'","")
 		ceo_ele = soup.findAll('h1', text = re.compile('CEO'));
-		if ceo_ele is not None:
+		if ceo_ele is not None and len(ceo_ele) != 0:
 			ngo['ceo'] = ceo_ele[0].next_sibling.next_sibling.get_text().strip().replace(u"\u00A0", " ").replace("'","")
 		if soup.findAll("p", { "class" : "crumbs" }) is not None:
 			areas = soup.findAll("p", { "class" : "crumbs" })[0].get_text().strip().replace(u"\u00A0", " ").replace("'","")
@@ -39,9 +37,11 @@ def extract(link):
 		if soup.findAll("h2", { "class" : "tagline" }) is not None:
 			ngo['tagline'] = soup.findAll("h2", { "class" : "tagline" })[0].get_text().strip().replace(u"\u00A0", " ").replace("'","")
 		
+		#print ngo
 		json_file.write(json.dumps(ngo, sort_keys=True))
 		json_file.write(",")
 		json_file.write("\n")
+
 
 
 links_file = os.path.join(OPENSHIFT_REPO_DIR, "links/charity.txt")
