@@ -1,3 +1,4 @@
+#!/var/lib/openshift/582177010c1e66dfb5000065/python/virtenv/venv/bin/python
 import re
 import requests
 import json
