@@ -29,12 +29,12 @@ def extract(link):
 		if board_ele is not None and len(board_ele) != 0:
 			ngo['board_leader'] = board_ele[0].next_sibling.next_sibling.get_text().strip().replace(u"\u00A0", " ").replace("'","")
 		ceo_ele = soup.findAll('h1', text = re.compile('CEO'));
-		if ceo_ele is not None and len(ceo_ele) != 0:
+		if ceo_ele is not None  and len(ceo_ele) != 0:
 			ngo['ceo'] = ceo_ele[0].next_sibling.next_sibling.get_text().strip().replace(u"\u00A0", " ").replace("'","")
 		if soup.findAll("p", { "class" : "crumbs" }) is not None:
 			areas = soup.findAll("p", { "class" : "crumbs" })[0].get_text().strip().replace(u"\u00A0", " ").replace("'","")
 			ngo['areas'] = areas.split(":")
-		if soup.findAll("h2", { "class" : "tagline" }) is not None:
+		if soup.findAll("h2", { "class" : "tagline" }) is not None and len(soup.findAll("h2", { "class" : "tagline" })) != 0:
 			ngo['tagline'] = soup.findAll("h2", { "class" : "tagline" })[0].get_text().strip().replace(u"\u00A0", " ").replace("'","")
 		
 		#print ngo

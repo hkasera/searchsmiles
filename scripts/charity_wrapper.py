@@ -5,8 +5,7 @@ import json
 import re
 import os
 
-OPENSHIFT_LOG_DIR = os.getenv("OPENSHIFT_LOG_DIR") 
-OPENSHIFT_REPO_DIR = os.getenv("OPENSHIFT_REPO_DIR") 
+
 
 def extract(link):
 	ngo = {}
@@ -28,25 +27,26 @@ def extract(link):
 		if contact_ele is not None:
 			ngo['address'] = contact_ele[0].next_sibling.next_sibling.get_text().strip().replace(u"\u00A0", " ").replace("'","")
 		board_ele = soup.findAll('h1', text = re.compile('Board Leadership'));
-		if board_ele is not None:
+		if board_ele is not None and len(board_ele) != 0:
 			ngo['board_leader'] = board_ele[0].next_sibling.next_sibling.get_text().strip().replace(u"\u00A0", " ").replace("'","")
 		ceo_ele = soup.findAll('h1', text = re.compile('CEO'));
-		if ceo_ele is not None:
+		if ceo_ele is not None  and len(ceo_ele) != 0:
 			ngo['ceo'] = ceo_ele[0].next_sibling.next_sibling.get_text().strip().replace(u"\u00A0", " ").replace("'","")
 		if soup.findAll("p", { "class" : "crumbs" }) is not None:
 			areas = soup.findAll("p", { "class" : "crumbs" })[0].get_text().strip().replace(u"\u00A0", " ").replace("'","")
 			ngo['areas'] = areas.split(":")
-		if soup.findAll("h2", { "class" : "tagline" }) is not None:
+		if soup.findAll("h2", { "class" : "tagline" }) is not None and len(soup.findAll("h2", { "class" : "tagline" })) != 0:
 			ngo['tagline'] = soup.findAll("h2", { "class" : "tagline" })[0].get_text().strip().replace(u"\u00A0", " ").replace("'","")
-		
-		json_file.write(json.dumps(ngo, sort_keys=True))
-		json_file.write(",")
-		json_file.write("\n")
+		print ngo
+		#json_file.write(json.dumps(ngo, sort_keys=True))
+		#json_file.write(",")
+		#json_file.write("\n")
 
-
-links_file = os.path.join(OPENSHIFT_REPO_DIR, "links/charity.txt")
+extract("http://www.charitynavigator.org/index.cfm?bay=search.summary&orgid=13763")
+exit()
+links_file = "links/charity.txt"
 op = open(links_file,'r');
-json_file_name = os.path.join(OPENSHIFT_REPO_DIR, "raw/charity_nav.txt")
+json_file_name = "raw/charity_nav.txt"
 json_file = open(json_file_name,'w')
 error = open(os.path.join(OPENSHIFT_LOG_DIR, "charity_errors.txt"),'a')
 links = op.readlines()
