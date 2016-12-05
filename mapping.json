@@ -1,0 +1,70 @@
+{
+  "ngos": {
+    "properties": {
+      "location": { "type": "geo_point" },
+      "city": { "type": "keyword" },
+      "state": { "type": "keyword" },
+      "country": { "type": "keyword" },
+      "region": { "type": "keyword" },
+      "areas": { "type": "keyword" },
+      "keywords": { "type": "keyword" },
+      "rating": { "type": "keyword" },
+      "is_site_down": { "type": "boolean" },
+      "location_error": { "type": "keyword" },
+      "source": { "type": "keyword" },
+      "source_data": {
+        "properties": {
+          "participation": { "type": "keyword" },
+          "revocation": { "type": "keyword" },
+          "irs_subsection": { "type": "keyword" }
+        }
+      },
+      "gs_data": {
+        "properties": {
+          "ruling_year": { "type": "short" },
+          "tax_year": { "type": "short" },
+          "year_founded": { "type": "short" },
+          "city": { "type": "keyword" },
+          "state": { "type": "keyword" },
+          "assets": { "type": "float" },
+          "income_total": { "type": "float" },
+          "expenses_total": { "type": "float" },
+          "revenue_total": { "type": "float" },
+          "deductibility_code": { "type": "keyword" },
+          "subsection_code": { "type": "keyword" },
+          "deductibility_code_description": { "type": "keyword" },
+          "subsection_code_description": { "type": "keyword" },
+          "geographic_areas_served": { "type": "keyword" },
+          "organization_ntee_codes": { "type": "keyword" },
+          "exchange": {
+            "properties": {
+              "participation_level": { "type": "keyword" }
+            }
+          }
+        }
+      },
+      "tw_data": {
+        "properties": {
+          "friends_count": { "type": "integer" },
+          "followers_count": { "type": "integer" },
+          "statuses_count": { "type": "integer" },
+          "created_at": { "type": "date" },
+          "last_update_at": { "type": "date" },
+          "lang": { "type": "keyword" }
+        }
+      },
+      "fb_data": {
+        "properties": {
+          "fan_count": { "type": "long" },
+          "location": { "type": "geo_point" },
+          "address": {
+            "properties": {
+              "country": { "type": "keyword" },
+              "city": { "type": "keyword" }
+            }
+          }
+        }
+      }
+    }
+  }
+}

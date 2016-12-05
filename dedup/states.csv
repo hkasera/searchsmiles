@@ -1,0 +1,530 @@
+country,state,Count
+"United States",CA,11820
+"United States",TX,7680
+"United States",NY,6983
+"United States",IL,6423
+"United States",FL,6256
+"United States",PA,6138
+"United States",OH,6037
+"United States",MI,4019
+"United States",MO,3619
+"United States",VA,3461
+"United States",MA,3437
+"United States",WA,2976
+"United States",NC,2918
+"United States",IN,2909
+"United States",NJ,2833
+"United States",MD,2569
+"United States",CO,2544
+"United States",OR,2413
+"United States",DC,2337
+"United States",WI,2330
+"United States",MN,2164
+"United States",AZ,2021
+"United States",IA,1831
+"United States",TN,1819
+"United States",OK,1808
+"United States",KS,1684
+"United States",KY,1637
+"United States",AL,1530
+"United States",GA,1513
+"United States",SC,1342
+"United States",NE,1290
+"United States",LA,1285
+"United States",CT,1222
+"United States",WV,933
+"United States",NM,914
+"United States",UT,910
+"United States",MT,905
+"United States",ME,904
+"United States",MS,879
+"United States",AR,878
+"United States",NH,790
+"United States",ID,767
+"United States",NV,762
+"United States",SD,644
+"United States",ND,588
+"United States",VT,574
+"United States",AK,529
+"United States",WY,425
+"United States",RI,392
+"United States",DE,388
+"United States",HI,388
+"United States",PR,2
+"United States",GE,1
+"United States",ZH,1
+"United Kingdom",England,69
+"United Kingdom",FL,5
+"United Kingdom",NE,2
+"United Kingdom",Scotland,2
+"United Kingdom",DC,1
+"United Kingdom",NC,1
+"United Kingdom",TX,1
+"United Kingdom",Vienna,1
+"United Kingdom",Wales,1
+India,DL,24
+India,WB,11
+India,MH,7
+India,BR,4
+India,KA,4
+India,TN,3
+India,Telangana,3
+India,FL,2
+India,JH,2
+India,KL,2
+India,OD,2
+India,RJ,2
+India,UP,2
+India,AA,1
+India,AE,1
+India,GJ,1
+India,HR,1
+India,MN,1
+India,MP,1
+India,PB,1
+Canada,Ontario,33
+Canada,BC,11
+Canada,"British Columbia",10
+Canada,ON,9
+Canada,"Québec",5
+Canada,Manitoba,3
+Canada,QC,3
+Canada,AB,2
+Canada,CA,2
+Canada,"Nova Scotia",2
+Canada,DE,1
+Canada,NS,1
+Canada,"New Brunswick",1
+Canada,OH,1
+Canada,"Prince Edward Island",1
+Canada,WA,1
+Nigeria,Lagos,20
+Nigeria,FCT,16
+Nigeria,Edo,4
+Nigeria,"Akwa Ibom",2
+Nigeria,Anambra,2
+Nigeria,Ebonyi,2
+Nigeria,Rivers,2
+Nigeria,Abia,1
+Nigeria,Bauchi,1
+Nigeria,Delta,1
+Nigeria,Enugu,1
+Nigeria,Imo,1
+Nigeria,Kaduna,1
+Nigeria,"Ogun State",1
+Nigeria,Ondo,1
+Nigeria,Osun,1
+Nigeria,Oyo,1
+Pakistan,Punjab,12
+Pakistan,"Islamabad Capital Territory",8
+Pakistan,"N.W.F.P",4
+Pakistan,Sindh,4
+Pakistan,Balochistan,1
+Pakistan,IN,1
+"South Africa",WC,12
+"South Africa",GP,11
+"South Africa",DC,4
+"South Africa",NE,3
+"South Africa",IN,2
+"South Africa",KZN,2
+"South Africa",MP,2
+"South Africa",MT,2
+"South Africa",NC,2
+"South Africa",AZ,1
+"South Africa",CA,1
+"South Africa",EC,1
+"South Africa",GA,1
+"South Africa",MI,1
+"South Africa",NJ,1
+"South Africa","Nairobi County",1
+"South Africa",OK,1
+"South Africa","South-East District",1
+Switzerland,GE,19
+Switzerland,VD,4
+Switzerland,ZH,4
+Switzerland,BE,1
+Switzerland,BS,1
+Switzerland,VS,1
+Switzerland,Vaud,1
+Brazil,SP,12
+Brazil,RJ,6
+Brazil,AP,3
+Brazil,MG,3
+Brazil,RS,2
+Brazil,BA,1
+Brazil,CA,1
+Brazil,CE,1
+Brazil,PA,1
+Brazil,PR,1
+Germany,Berlin,9
+Germany,NRW,6
+Germany,HE,4
+Germany,BY,3
+Germany,"Nordrhein-Westfalen",3
+Germany,AE,2
+Germany,BW,2
+Germany,"Baden-Württemberg",2
+Germany,AL,1
+Germany,Bayern,1
+Germany,HH,1
+Germany,NDS,1
+Germany,RP,1
+Italy,Lazio,16
+Italy,Lombardia,2
+Italy,Piemonte,2
+Italy,Sicily,2
+Italy,Veneto,2
+Italy,Abruzzo,1
+Italy,"Emilia-Romagna",1
+Italy,"Friuli-Venezia Giulia",1
+Italy,Liguria,1
+Italy,Piedmont,1
+Italy,Sicilia,1
+Italy,Tuscany,1
+France,"Île-de-France",22
+France,"Provence-Alpes-Côte d'Azur",4
+France,"Auvergne-Rhône-Alpes",2
+France,"Alsace-Champagne-Ardenne-Lorraine",1
+"Puerto Rico",PR,31
+"Puerto Rico",Guaynabo,2
+"Puerto Rico","San Juan",1
+Kenya,"Nairobi County",15
+Kenya,MO,2
+Kenya,"Baringo County",1
+Kenya,"Busia County",1
+Kenya,"Kilifi County",1
+Kenya,"Mombasa County",1
+Kenya,OH,1
+Kenya,"Región Metropolitana",1
+Kenya,"Son.",1
+Australia,VIC,6
+Australia,ACT,4
+Australia,FL,4
+Australia,NSW,2
+Australia,"New South Wales",1
+Australia,Queensland,1
+Australia,SA,1
+Australia,TX,1
+Australia,VA,1
+Mexico,CDMX,11
+Mexico,CA,2
+Mexico,ME,2
+Mexico,"Chis.",1
+Mexico,"Méx.",1
+Mexico,"N.L.",1
+Mexico,NE,1
+Mexico,NY,1
+Mexico,"Oax.",1
+Mexico,"Sin.",1
+Mexico,"Tlax.",1
+Spain,"Comunidad de Madrid",9
+Spain,"Community of Madrid",4
+Spain,PM,2
+Spain,CA,1
+Spain,CT,1
+Spain,PV,1
+Spain,"Región de Murcia",1
+Austria,Wien,21
+Austria,Vienna,2
+Austria,"Niederösterreich",1
+Austria,"Upper Austria",1
+Belgium,Bruxelles,8
+Belgium,Brussels,5
+Belgium,Vlaanderen,5
+Belgium,"Brussels Hoofdstedelijk Gewest",3
+Belgium,IN,1
+Belgium,Vienna,1
+Belgium,"West Java",1
+Thailand,Bangkok,10
+Thailand,"จ.เชียงใหม่",2
+Thailand,"Mae Hong Son",1
+Thailand,NY,1
+Thailand,OK,1
+Thailand,Southwest,1
+Thailand,"จ.นนทบุรี",1
+Thailand,"จ.เชียงราย",1
+Indonesia,"Daerah Khusus Ibukota Jakarta",5
+Indonesia,NY,3
+Indonesia,"Jawa Barat",2
+Indonesia,"Special Capital Region of Jakarta",2
+Indonesia,Bali,1
+Indonesia,"Jawa Tengah",1
+Indonesia,Jogja,1
+Indonesia,PA,1
+Indonesia,"South Sulawesi",1
+Indonesia,"West Kalimantan",1
+Bangladesh,"Dhaka Division",7
+Bangladesh,"Chittagong Division",1
+Bangladesh,MH,1
+Bangladesh,"Rajshahi Division",1
+Netherlands,NH,9
+Netherlands,ZH,5
+Netherlands,UT,2
+Netherlands,NB,1
+Netherlands,Overste,1
+Philippines,NCR,9
+Philippines,"Kalakhang Maynila",2
+Philippines,"Metro Manila",2
+Philippines,"Central Luzon",1
+Philippines,"Northern Mindanao",1
+Argentina,CABA,13
+Argentina,"Buenos Aires",1
+Argentina,"Buenos Aires Province",1
+Argentina,Callao,1
+Argentina,Cordoba,1
+Argentina,"Salta Province",1
+Uganda,"Central Region",12
+Uganda,TX,1
+Uganda,"Western Region",1
+Ghana,"Greater Accra Region",9
+Ghana,"Ashanti Region",2
+Ghana,Central,1
+Ghana,"Upper East Region",1
+"Russian Federation",Moscow,7
+"Russian Federation","Saint Petersburg",3
+"Russian Federation","Omsk Oblast",1
+"Russian Federation","Permskiy kray",1
+"Russian Federation",WV,1
+Colombia,"Bogotá",10
+Colombia,"Valle del Cauca",2
+Colombia,Antioquia,1
+Colombia,Cantabria,1
+Colombia,Cundinamarca,1
+Colombia,Quindio,1
+Cameroon,Centre,4
+Cameroon,"Aquitaine-Limousin-Poitou-Charentes",1
+Cameroon,Littoral,1
+Cameroon,Southwest,1
+Peru,"Departamento de Lima",6
+Romania,Bucharest,3
+Romania,"Municipiul București",3
+Romania,CJ,1
+Romania,CT,1
+"Iran (Islamic Republic of)","Tehran Province",10
+"Iran (Islamic Republic of)",PA,1
+"Iran (Islamic Republic of)","Sistan and Baluchestan Province",1
+Nepal,"Central Development Region",10
+Nepal,WV,1
+Japan,"Fukuoka Prefecture",2
+Japan,"Okinawa Prefecture",2
+Japan,Tokyo,2
+Japan,"Hiroshima-ken",1
+Japan,"Tōkyō-to",1
+Lebanon,"Beirut Governorate",3
+Lebanon,"Jabal Lubnan",3
+Lebanon,"Mount Lebanon Governorate",3
+Lebanon,UT,1
+Serbia,Vojvodina,1
+"U.S. Virgin Islands",VI,14
+"U.S. Virgin Islands","St. Thomas",2
+Afghanistan,Kabul,8
+Afghanistan,Balkh,1
+Afghanistan,Kandahar,1
+Bolivia,"Departamento de La Paz",3
+Bolivia,"La Paz Department",2
+Bolivia,CL,1
+Senegal,"Dakar Region",5
+Senegal,Banjul,1
+Senegal,Dakar,1
+Bulgaria,"Sofia-city",6
+Bulgaria,"Blagoevgrad Province",1
+Bulgaria,Pernik,1
+Bulgaria,"Sofia City Province",1
+Cambodia,"Phnom Penh",7
+Cambodia,"Kampong Cham Province",1
+Cambodia,"Kampong Speu Province",1
+Egypt,"Cairo Governorate",6
+Egypt,"Giza Governorate",2
+Egypt,"Alexandria Governorate",1
+Georgia,Tbilisi,9
+Georgia,"Kvemo Kartli",1
+Ireland,"County Dublin",4
+Ireland,"Northern Ireland",2
+Ireland,"County Kildare",1
+Ireland,"County Leitrim",1
+Greece,GA,2
+Greece,"Thessalia Sterea Ellada",1
+Sweden,"Stockholms län",5
+Sweden,MN,1
+Sweden,NY,1
+Sweden,TX,1
+Sweden,"Västra Götaland County",1
+Sweden,"Västra Götalands län",1
+Sweden,"Örebro County",1
+"Tanzania (United Republic of)","Mkoa wa Unguja Mjini Magharibi",3
+"Tanzania (United Republic of)","Mwanza Region",2
+"Tanzania (United Republic of)","Dar es Salaam",1
+"Tanzania (United Republic of)","Mbeya Region",1
+"Tanzania (United Republic of)","Tabora Region",1
+Croatia,"City of Zagreb",5
+Croatia,"Splitsko-dalmatinska županija",4
+Croatia,"Primorsko-goranska županija",1
+Ecuador,Pichincha,3
+Ecuador,Guayas,1
+Ecuador,NM,1
+Ecuador,TX,1
+Kyrgyzstan,"Chuy Province",6
+Kyrgyzstan,"Issyk-Kul Region",1
+Kyrgyzstan,"Osh Region",1
+Norway,Oslo,7
+Norway,Hordaland,1
+Norway,"Østfold",1
+Albania,"Tirana County",2
+Congo,Kinshasa,3
+Congo,Brazzaville,1
+Congo,"Community of Madrid",1
+Congo,Katanga,1
+Malaysia,"Federal Territory of Kuala Lumpur",3
+Malaysia,Malacca,2
+Malaysia,"Wilayah Persekutuan Kuala Lumpur",1
+Turkey,"İstanbul",7
+Turkey,Ankara,3
+Zimbabwe,"Harare Province",2
+Zimbabwe,"Bulawayo Province",1
+Zimbabwe,"Manicaland Province",1
+"Bosnia and Herzegovina","Federacija Bosne i Hercegovine",5
+"Bosnia and Herzegovina","Federation of Bosnia and Herzegovina",1
+"Bosnia and Herzegovina","Republika Srpska",1
+Iraq,"Baghdad Governorate",1
+Iraq,"Erbil Governorate",1
+Iraq,WA,1
+Kazakhstan,"Almaty Province",2
+Kazakhstan,"Kostanay Region",2
+Kazakhstan,"South Kazakhstan Region",1
+Kazakhstan,"West Kazakhstan Province",1
+Palestine,"Jerusalem District",2
+China,"Beijing Shi",3
+China,Beijing,1
+China,"Hong Kong Island",1
+China,Yunnan,1
+"Hong Kong","Hong Kong Island",5
+"Hong Kong",NE,1
+Lithuania,"Vilniaus apskr.",3
+Lithuania,"Kaunas County",1
+Malawi,"Central Region",2
+Poland,mazowieckie,4
+Poland,"śląskie",2
+Poland,"Województwo dolnośląskie",1
+"Sierra Leone","Western Area",5
+Ukraine,"Kyiv city",2
+Ukraine,"Luhans'ka oblast",1
+Ukraine,MA,1
+Uruguay,"Departamento de Montevideo",3
+Uruguay,Montevideo,2
+Uruguay,NRW,1
+Zambia,"Lusaka Province",3
+Zambia,FL,1
+Burundi,"Bujumbura Mairie",4
+Liberia,Montserrado,4
+"Republic of Moldova","Chișinău",4
+"Republic of Moldova",Gagauzia,1
+"Viet Nam","Hà Nội",5
+Jordan,"Amman Governorate",2
+Jordan,"Irbid Governorate",1
+"Lao Peop. Dem. Rep.","เวียงจันทน์",1
+Montenegro,"Podgorica Municipality",4
+Montenegro,"Glavni grad Podgorica",1
+Montenegro,"Nikšić Municipality",1
+"New Zealand",Canterbury,1
+"New Zealand",MA,1
+"New Zealand",PA,1
+"New Zealand",Wellington,1
+Portugal,Lisboa,3
+Portugal,MA,1
+Slovenia,Ljubljana,4
+Slovenia,"Domžale",1
+Slovenia,Grosuplje,1
+"Sri Lanka",WP,3
+"Sri Lanka",AZ,1
+"Sri Lanka",SP,1
+"The form. Yug.  Rep. of Macedonia",SK,6
+Uzbekistan,"Andijan Province",1
+Uzbekistan,"Samarqand viloyati",1
+Uzbekistan,"Tashkent Province",1
+Algeria,"Algiers Province",1
+Algeria,"Wilaya d'Annaba",1
+Barbados,"Saint Michael",2
+Barbados,"Alsace-Champagne-Ardenne-Lorraine",1
+Belarus,"Minsk Region",2
+Belarus,NV,1
+"El Salvador","San Salvador Department",2
+"El Salvador",CA,1
+Ethiopia,"Addis Ababa",2
+Finland,Uusimaa,1
+Gambia,Banjul,2
+Gambia,DC,1
+Israel,"Tel Aviv District",3
+Israel,"Jerusalem District",1
+Israel,NE,1
+Morocco,"Grand Casablanca",2
+Morocco,KY,1
+"Saudi Arabia","Makkah Province",1
+Venezuela,"Dto. Capital",2
+"Costa Rica","Méx.",1
+"Costa Rica","Provincia de San José",1
+Estonia,"Harju maakond",4
+Guam,GU,4
+"Libyan Arab Jamahiriya","Benghazi district",1
+"Libyan Arab Jamahiriya","Tripoli District",1
+"Libyan Arab Jamahiriya",Tunis,1
+Mauritius,"Port Louis District",1
+"Northern Mariana Islands",MP,4
+Paraguay,AL,1
+Paraguay,"Central Department",1
+Paraguay,"Departamento Central",1
+Somalia,"Woqooyi Galbeed",1
+Tajikistan,"Districts of Republican Subordination",1
+"Trinidad and Tobago",WY,2
+"Trinidad and Tobago","Port of Spain",1
+"Trinidad and Tobago","Tunapuna/Piarco Municipal Corporation",1
+Benin,"Littoral Department",2
+Chile,"Región Metropolitana",2
+Chile,"Santiago Metropolitan Region",1
+"Côte dIvoire","Lagunes Region",2
+"Dominican Republic","Distrito Nacional",2
+Guinea,Conakry,1
+Mongolia,Ulaanbaatar,1
+Namibia,"Khomas Region",2
+Namibia,ND,1
+Nicaragua,MN,1
+Nicaragua,NM,1
+Qatar,Doha,2
+Qatar,CA,1
+"Republic of Korea",Seoul,1
+Rwanda,"Kigali City",1
+"Saint Lucia",Castries,1
+Slovakia,"Bratislava Region",1
+Sudan,Khartoum,2
+Togo,"Maritime Region",1
+Tunisia,Nabeul,1
+Tunisia,Sfax,1
+Armenia,Yerevan,1
+Bahrain,OK,1
+"Burkina Faso","Centre Region",1
+"Cape Verde",Praia,1
+Honduras,"Francisco Morazán Department",1
+Kuwait,"Niederösterreich",1
+Niger,"Dar es Salaam",1
+Niger,"Niamey Urban Community",1
+"Papua New Guinea",CA,1
+Samoa,Upolu,2
+Seychelles,"Mont Fleuri",1
+"Taiwan, Province of","Taipei City",1
+"Timor-Leste",Dili,1
+"United Arab Emirates","Abu Dhabi",1
+Yemen,"Capital Municipality",2
+"American Samoa",AS,1
+Bahamas,"New Providence",1
+"British Virgin Islands",VA,1
+"Central African Republic",Bangui,1
+Comoros,Ngazidja,1
+Cyprus,Larnaca,1
+Guatemala,Guatemala,1
+Haiti,"Ouest Department",1
+Jamaica,IL,1
+Luxembourg,"District de Luxembourg",1
+Mali,"Bamako Capital District",1
+"Marshall Islands",MH,1
+Moldova,"Raionul Strășeni",1
+Mozambique,"Cidade de Maputo",1
+Suriname,Paramaribo,1
