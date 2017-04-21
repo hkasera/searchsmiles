@@ -56,11 +56,11 @@ DETAIL_NEEDED_FIELDS = set([
 ])
 
 def get_exchange(org_id):
-    r = requests.get('https://sandboxdata.guidestar.org/v3/exchange/{0}.json'.format(org_id), auth=('f50dbc80559e41529d1e4d3c15850c46', ''))
+    r = requests.get('https://sandboxdata.guidestar.org/v3/exchange/{0}.json'.format(org_id), auth=('AUTH', ''))
     return r.json() if r.status_code == requests.codes.ok else None
 
 def get_detail(org_id):
-    r = requests.get('https://sandboxdata.guidestar.org/v1/detail/{0}.json'.format(org_id), auth=('05bc9ae867884e7aa9e2f5e4a459b0f5', ''))
+    r = requests.get('https://sandboxdata.guidestar.org/v1/detail/{0}.json'.format(org_id), auth=('AUTH', ''))
     return r.json() if r.status_code == requests.codes.ok else None
 
 def get_address(item):
