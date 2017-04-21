@@ -15,8 +15,8 @@ BULK_SIZE = CHUNK_SIZE*THREAD_COUNT
 INDEX_NAME = 'ngos'
 TYPE_NAME = 'ngo'
 
-es_remote = Elasticsearch('http://767538a80e2cb56a5115c050db18700d.us-west-1.aws.found.io:9200', http_auth=('elastic', 'jmZEm0ASzrp81BAOmTU95bj9'))
-es_remote_new = Elasticsearch('http://6ababf46412e5cd9ff51a87e3b704981.us-west-1.aws.found.io:9200', http_auth=('elastic', 'QHtaXf3aNCwJtuz66nKZfnRq'))
+es_remote = Elasticsearch('http://ID.us-west-1.aws.found.io:9200', http_auth=('elastic', 'PASS'))
+es_remote_new = Elasticsearch('http://ID.us-west-1.aws.found.io:9200', http_auth=('elastic', 'PASS'))
 es_local = Elasticsearch('http://localhost:9200')
 es = es_remote_new
 
