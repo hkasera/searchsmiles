@@ -1,4 +1,4 @@
-#!/var/lib/openshift/582177010c1e66dfb5000065/python/virtenv/venv/bin/python
+#!/var/lib/openshift/ID/python/virtenv/venv/bin/python
 import re
 import requests
 import json
@@ -6,7 +6,7 @@ import json
 API_BASE = "https://graph.facebook.com/v2.8/"
 fields = ["about","contact_address","description","current_location",
 			"fan_count","general_info,hours","is_verified","location","mission","name","phone","website"]
-ACCESS_TOKEN = "923497207783449|9d8452ef7ebeb9a98708de0bf0063ad6"
+ACCESS_TOKEN = ""
 
 fb_op_file = open("raw/fb_op.txt",'w')
 
